@@ -1,7 +1,9 @@
 ---
 title: "Bilingual Conversational Agents as Reading Companions"
 date: 2022-08-16
-excerpt: "We developed a bilingual conversational agent embedded in the story reading interface **Rosita Reads with My Family**, to support parent-child shared reading. Not only does Rosita engages children in back-and-forth conversations about the story plots to enhance story comprehension, Rosita also involves parents by providing discussion prompts that connect the story to children's life experience.<br/><img src='/images/Rosita.png'>"
+excerpt: "<div style='float:left; margin-right:40px;'>
+  <img src='/images/Rosita.png' alt='Rosita picture' width='230' height='120'>
+</div> <p> We developed a bilingual conversational agent embedded in the story reading interface, Rosita Reads with My Family, to support parent-child shared reading. Not only does Rosita engages children in back-and-forth conversations about the story plots to enhance story comprehension, Rosita also involves parents by providing discussion prompts that connect the story to children's life experience.</p><br>"
 collection: portfolio
 ---
 

@@ -24,4 +24,4 @@ author_profile: true
 
 ## Journal Articles
 
-1. **He, K**., & Bowman, Y. Z. (2021). Association between teachers’ shared book reading strategies and children’s vocabulary development in rural China preschools. Journal of Chinese Writing Systems, 5(3), 185-193.
+1. **He, K**., & Bowman, Y. Z. (2021). Association between teachers’ shared book reading strategies and children’s vocabulary development in rural China preschools. *Journal of Chinese Writing Systems*, 5(3), 185-193.

@@ -7,6 +7,4 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
-To be updated.
+<embed src="{{ site.baseurl }}/files/Kunlei_He_CV.pdf" width="600" height="700" type='application/pdf'> 
