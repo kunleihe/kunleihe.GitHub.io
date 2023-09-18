@@ -5,7 +5,7 @@ collection: portfolio
 ---
 In collaboration with the John Ganz Coony Center at Sesame Workshop, we developed a bilingual conversational agent embodied in the Sesame Street character, Rosita, along with a story reading interface, *Rosita Reads with My Family*. The goal of this project is to support culturally-engaging shared reading in Hispanic families. Unlike most existing conversational agents that only supports one-to-one dialogue with individual children, our conversational agent, Rosita, not only engages children in back-and-forth conversations about the story plots but also facilitates parental involvement by providing discussion prompts that connect the story to children’s life experience. This project contributes 1) a child-friendly bilingual conversational agent, 2) a family-oriented conversational interface, and 3) a culturally-engaging learning experience.
 
-<img src="/images/rosita-flow.png" alt="rosita" width=auto height=auto>
+<img src="/images/Rosita-flow.png" alt="Rosita Workflow" width=auto height=auto>
 
 ## System Development and Initial User Study 
 In June 2022, we developed the *Rosita Reads with My Family* system and conducted a user study with 18 parent-child pairs from local Hispanic communities. We found that the bilingual agent effectively engages children verbally and encourages parental involvement in reading processes. The study also provides design insights for creating conversational agents for bilingual children.
