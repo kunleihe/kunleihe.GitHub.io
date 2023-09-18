@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Kunlei He"
+  name             : "Kunlei He, M.Ed."
   avatar           : "profile.png"
-  bio              : "Ph.D. student in Education"
+  bio              : "Ph.D. Student<br>School of Education<br>UC Irvine"
   location         : "Irvine, CA"
   employer         :
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "kunlei-he"
-  orcid            : "https://orcid.org/0000-0003-3396-3578"
+  #orcid            : "https://orcid.org/0000-0003-3396-3578"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -198,10 +198,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
   # _pages
   - scope:
       path: ""

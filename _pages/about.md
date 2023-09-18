@@ -8,9 +8,18 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student in Education at the University of California, Irvine, where I am advised by [Dr. Mark Warschauer](http://markwarschauer.com/). Prior to joining UCI, I completed my master's at Harvard Graduate School of Education. My research explores the intersection of **cutting-edge technologies** and **child development**, with a focus on creating innovative solutions to support children's learning.
+I am a Ph.D. student specializing in Educational Technology at the University of California, Irvine, where I am advised by [Dr. Mark Warschauer](http://markwarschauer.com/) and [Dr. Penelope Collins](https://sites.google.com/uci.edu/penelopecollins/home). Prior to joining UCI, I completed my master's at Harvard Graduate School of Education, advised by [Dr. Catherine Snow](https://www.gse.harvard.edu/directory/faculty/catherine-snow). My research explores the intersection of **child-computer interaction** and **education**, with a focus on creating innovative technology solutions to support children's learning.
 
-My current research focuses on designing and evaluating **conversational technologies** to promote early learning, with a particular emphasis on **language and STEM development**. I am committed to creating learning experiences that are **inclusive and accessible** to children from diverse linguistic, cultural, and socio-economic backgrounds. 
+My current research focuses on designing and evaluating conversational interface to promote early learning in various domains, including language, science, and computational thinking. I design with and for children from diverse backgrounds, such as low-income Hispanic bilingual children. I am committed to creating digital learning experiences that are inclusive and accessible to families from diverse linguistic, cultural, and socio-economic backgrounds. 
 
-I take a **human-centric design approach** to my work, often conducting playtests with young children and engaging in co-design with parents. I am dedicated to amplifying the voices of children and parents in technology design to improve the development of children and the well-being of families. 
+## News
+{% include base_path %}
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.posts limit:10 %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    {% capture written_year %}{{ year }}{% endcapture %}
+  {% endif %}
+  {% include archive-single.html %}
+{% endfor %}
 

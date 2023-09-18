@@ -27,6 +27,7 @@
   }
 }
 
+
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
@@ -34,7 +35,7 @@
   color: mix(#fff, $gray, 25%);
   border-bottom: 1px solid $border-color;
 
-  + .list__item .archive__item-title {
+  +.list__item .archive__item-title {
     margin-top: 0.5em;
   }
 }
@@ -43,7 +44,7 @@
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
 
-  a + a {
+  a+a {
     opacity: 0.5;
   }
 }
@@ -59,25 +60,28 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
 
-  & + p {
+  &+p {
     text-indent: 0;
   }
 }
 
 .archive__item-teaser {
   border-radius: $border-radius;
-  overflow: hidden;
+
   img {
-    width: 100%;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+    border: 0;
+    max-width: 100%;
   }
 }
 
 .archive__item:hover {
-  .archive__item-teaser {
-    box-shadow: 0 0 10px rgba(#000, 0.25);
-  }
+  // .archive__item-teaser {
+  //   box-shadow: 0 0 10px rgba(#000, 0.25);
+  // }
 
   .archive__item-title {
     text-decoration: underline;
@@ -130,14 +134,17 @@
 
   @include breakpoint($small) {
     @include gallery(5 of 10);
+
     .archive__item-teaser {
       max-height: 200px;
     }
   }
 
   @include breakpoint($medium) {
-    margin-left: 0; /* reset before mixin does its thing*/
-    margin-right: 0; /* reset before mixin does its thing*/
+    margin-left: 0;
+    /* reset before mixin does its thing*/
+    margin-right: 0;
+    /* reset before mixin does its thing*/
     @include gallery(2.5 of 10);
 
     .archive__item-teaser {
@@ -243,3 +250,4 @@
     }
   }
 }
+

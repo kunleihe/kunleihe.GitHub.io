@@ -7,8 +7,8 @@
    ========================================================================== */
 
 .sidebar {
-  -webkit-transform: translate3d(0, 0 , 0);
-          transform: translate3d(0, 0 , 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 
   @include clearfix();
   margin-bottom: 1em;
@@ -17,37 +17,51 @@
     @include span(2 of 12);
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+
+    opacity: 0.8;
+    transition: opacity 0.3s;
 
     &:hover {
       opacity: 1;
     }
   }
 
-
   @include breakpoint($x-large) {
     padding-right: 0;
   }
 
-  h2, h3, h4, h5, h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
   }
 
-  h3, h4 {
+  h3,
+  h4 {
     font-size: $type-size-5;
   }
 
-  p, li {
+  p,
+  li {
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
   }
 
   img {
-    width: 100%;
+    width: 70%;
   }
 }
+
+#my-url {
+  text-decoration: none;
+  color: #494e52;
+}
+
 
 .sidebar__right {
   margin-bottom: 1em;
@@ -116,13 +130,14 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
 }
 
 .author__bio {
   margin: 0;
+
 
   @include breakpoint($large) {
     margin-top: 10px;

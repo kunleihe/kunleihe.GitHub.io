@@ -26,8 +26,11 @@
   .page__inner-wrap {
     @include full();
 
+    .page__meta {
+      display: none
+    }
+
     .page__content,
-    .page__meta,
     .page__share {
       @include full();
     }
@@ -38,7 +41,7 @@
   margin-top: 0;
   line-height: 1;
 
-  & + .page__meta {
+  &+.page__meta {
     margin-top: -0.5em;
   }
 }
@@ -55,7 +58,16 @@
     border-bottom: 1px solid $border-color;
   }
 
-  p, li, dl {
+  page__date {
+    font-size: $type-size-7;
+    line-height: 0.8;
+    color: #646769;
+  }
+
+
+  p,
+  li,
+  dl {
     font-size: 1em;
   }
 
@@ -64,8 +76,8 @@
     margin: 0 0 $indent-var;
 
     /* sibling indentation*/
-    @if $paragraph-indent == true {
-      & + p {
+    @if $paragraph-indent ==true {
+      &+p {
         text-indent: $indent-var;
         margin-top: -($indent-var);
       }
@@ -101,10 +113,20 @@
   }
 
   /* blockquote citations */
-  blockquote + .small {
+  blockquote+.small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+
+  p.page__date {
+    font-size: 1em;
+  }
+
+  i.fa.fa-fw.fa-calendar-alt {
+    font-size: .8em;
+  }
+
+
 }
 
 .page__hero {
@@ -300,6 +322,7 @@
   transition: $global-transition;
 
   &.disabled {
+
     input,
     button,
     textarea,
