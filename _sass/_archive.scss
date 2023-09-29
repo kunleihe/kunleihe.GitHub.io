@@ -66,17 +66,6 @@
   }
 }
 
-.archive__item-teaser {
-  border-radius: $border-radius;
-
-  img {
-    height: auto;
-    width: auto;
-    vertical-align: middle;
-    border: 0;
-    max-width: 100%;
-  }
-}
 
 .archive__item:hover {
   // .archive__item-teaser {
@@ -88,6 +77,28 @@
   }
 }
 
+// flex-box
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.flex-container .excerpt,
+.flex-container .teaser {
+  box-sizing: border-box;
+}
+
+
+.flex-container .excerpt {
+  max-width: 70%;
+  flex: 1;
+}
+
+.flex-container .teaser {
+  max-width: 280px;
+  flex: none;
+}
 
 /*
    List view
