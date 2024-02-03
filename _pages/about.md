@@ -19,7 +19,7 @@ In my research, I actively collaborate with children and parents from diverse la
 ## News
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts limit:10 %}
+{% for post in site.posts limit:5 %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% if year != written_year %}
     {% capture written_year %}{{ year }}{% endcapture %}
