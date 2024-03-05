@@ -5,14 +5,14 @@ permalink: /publications/
 author_profile: true
 ---
 ## Under-review Manuscripts
-***M3*** Anonymous Authors (as the **First Author**). Content Analysis on Children's Interactive Storytelling Apps [title modified to ensure blind review]. Submitted to *IDC'24*
-
-***M2*** Anonymous Authors  (as the **First Author**). Home Deployment of a Bilingual Conversational Agent for Parent-Child Co-reading [title modified to ensure blind review]. Submitted to *CHI'24* 
+***M2*** Anonymous Authors (as the **First Author**). Content Analysis on Children's Interactive Storytelling Apps [title modified to ensure blind review]. Submitted to *IDC'24*
 
 ***M1*** Anonymous Authors (as the **Second Author**). Leveraging AI to Support Children's Science Learning from Educational Videos [title modified to ensure blind review]. Submitted to *Journal of Educational Psychology* 
 
 ## Peer-reviewed Conference Proceedings
-***C1*** Xu, Y., **He, K.**, Vigil, V., Ojeda-Ramirez, S., Liu, X., Levine, J., Cervera, K., & Warschauer, M. (2023, June) . “Rosita Reads With My Family”: Developing A Bilingual Conversational Agent to Support Parent-Child Shared Reading. *In Proceedings of the 22nd ACM International Conference on Interaction Design and Children* (IDC ’23). Association for Computing Machinery, Chicago, IL, USA **(Best Paper Award)** [[PDF]](https://dl.acm.org/doi/10.1145/3585088.3589354)
+***C2*** **He, K.**, Levine, J., Cervera, K., Ojeda-Ramirez, S., Xu, Y., & Warschauer, M. (2024, May).  A Home Study of Parent-Child Co-Reading with a Bilingual Conversational Agent. *In Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems (CHI’24)*, Association for Computing Machinery, Honolulu, HI, USA. 
+
+***C1*** Xu, Y., **He, K.**, Vigil, V., Ojeda-Ramirez, S., Liu, X., Levine, J., Cervera, K., & Warschauer, M. (2023, June) . “Rosita Reads With My Family”: Developing A Bilingual Conversational Agent to Support Parent-Child Shared Reading. *In Proceedings of the 22nd ACM International Conference on Interaction Design and Children (IDC ’23)*. Association for Computing Machinery, Chicago, IL, USA **(Best Paper Award)** [[PDF]](https://dl.acm.org/doi/10.1145/3585088.3589354)
 
 ## Journal Articles
 ***J1*** **He, K**., & Bowman, Y. Z. (2021). Association between teachers’ shared book reading strategies and children’s vocabulary development in rural China preschools. *Journal of Chinese Writing Systems*, 5(3), 185-193. [[PDF]](https://journals.sagepub.com/doi/epub/10.1177/25138502211025643)
