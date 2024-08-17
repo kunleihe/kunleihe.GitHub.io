@@ -1,5 +1,5 @@
 ---
-title: 'JCWS Paper on Shared Book Reading Strategies of Preschool Teachers'
+title: 'JCWS paper on shared book reading strategies of preschool teachers'
 collection: news
 date: 2021-07-20
 permalink: /posts/2021/07/jcws-paper/

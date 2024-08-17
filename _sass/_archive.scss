@@ -2,6 +2,21 @@
    ARCHIVE
    ========================================================================== */
 
+#main {
+    @include container;
+    @include clearfix;
+    margin-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    animation: intro 0.3s both;
+    animation-delay: 0.35s;
+  
+    @include breakpoint($x-large) {
+      // max-width: $x-large;
+      max-width: 1500px;
+    }
+  }
+  
 .archive {
   margin-bottom: 2em;
 
@@ -77,28 +92,101 @@
   }
 }
 
-flex-box
+p.page__date {
+  font-size: 1em;
+  // font-size: 0.75em;
+
+  // reduce margin
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page__date i.fa-calendar-alt {
+  font-size: 0.75em;
+  /* Adjust to desired size */
+  font-weight: 300;
+  /* Font Awesome uses different classes like fas, far to control weight */
+}
+
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: start;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0;
+
+  .excerpt {
+    flex: 1 1 65%;
+    margin-right: 1em;
+  }
+
+  .teaser {
+    flex: 0 0 35%; /* Allows the image to grow but limits its minimum width */
+    max-width: 35%; /* Image will take up 40% of the container width */
+    margin-left: auto; /* Keep the image aligned to the right */
+    margin-top: 2em; /* Adjust this value to move the image lower */
+  }
+
+  img {
+    width: 300px;
+    height: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.5em; /* Adjust if you want rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Basic shadow */
+  }
+  
 }
 
-.flex-container .excerpt,
-.flex-container .teaser {
-  box-sizing: border-box;
+
+/* Responsive behavior */
+@media (max-width: 1200px) {
+  .flex-container {
+    .teaser {
+      flex: 0 0 50%; /* Increase the image size to 50% for medium screens */
+      max-width: 50%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+
+    .teaser {
+      max-width: 100%;
+      margin-top: 1em; /* Adds space between text and image */
+    }
+  }
 }
 
 
-.flex-container .excerpt {
-  max-width: 100%;
-  flex: 1;
-}
 
-.flex-container .teaser {
-  max-width: 280px;
-  flex: none;
-}
+// flex-box .flex-container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: start;
+// }
+
+// .flex-container .excerpt,
+// .flex-container .teaser {
+//   box-sizing: border-box;
+// }
+
+
+// .flex-container .excerpt {
+//   max-width: 100%;
+//   flex: 1;
+// }
+
+// .flex-container .teaser {
+//   max-width: 280px;
+//   flex: none;
+// }
 
 // flex-box
 // .flex-container {

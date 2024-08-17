@@ -15,10 +15,10 @@
     @include container;
     @include clearfix;
     padding: 1em 1em 1em;
-    font-family: $sans-serif-narrow;
+    font-family: $sans-serif;
 
     @include breakpoint($x-large) {
-      max-width: $x-large;
+      max-width: 1400px;
     }
 
     nav {
@@ -45,6 +45,8 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  // change font size
+  font-size: $type-size-5;
 
   &--lg {
     padding-right: 2em;

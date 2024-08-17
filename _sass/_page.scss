@@ -12,15 +12,22 @@
   animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    // max-width: $x-large;
+    max-width: 1400px;
   }
 }
 
 .page {
+  // @include breakpoint($large) {
+  //   @include span(10 of 12 last);
+  //   @include prefix(0.5 of 12);
+  //   @include suffix(2 of 12);
+  // }
+
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include suffix(0.5 of 12);
   }
 
   .page__inner-wrap {
@@ -59,7 +66,7 @@
   }
 
   page__date {
-    font-size: $type-size-7;
+    font-size: $type-size-6;
     line-height: 0.8;
     color: #646769;
   }
@@ -68,7 +75,8 @@
   p,
   li,
   dl {
-    font-size: 1em;
+    // font-size: 1em;
+    font-size: $type-size-5;
   }
 
   /* paragraph indents */
@@ -120,6 +128,11 @@
 
   p.page__date {
     font-size: 1em;
+    // font-size: 0.75em;
+
+    // reduce margin
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   i.fa.fa-fw.fa-calendar-alt {
@@ -421,4 +434,51 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+
+// the news section added to home page
+/* Ensure news section on the home page uses the same styles */
+.news-section {
+
+  p.page__date {
+    font-size: 1em;
+    // font-size: 0.75em;
+  
+    // reduce margin
+    margin-top: 0;
+    margin-bottom: 0.2em;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h2{
+    margin-bottom: 0;
+    padding-bottom: 0.2em;
+  }
+
+
+}
+
+
+// handle pdfs
+.responsive-pdf-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.responsive-pdf-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
