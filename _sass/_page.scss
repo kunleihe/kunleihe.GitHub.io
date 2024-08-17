@@ -6,28 +6,24 @@
   @include container;
   @include clearfix;
   margin-top: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 4em;
+  padding-right: 0;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
-  @include breakpoint(1500px) {
-    // max-width: $x-large;
-    max-width: 1200px;
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
   }
 }
 
 .page {
-  // @include breakpoint($large) {
-  //   @include span(10 of 12 last);
-  //   @include prefix(0.5 of 12);
-  //   @include suffix(2 of 12);
-  // }
-
+  padding-left: 1em !important;
+  padding-right: 4em !important;
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(0.5 of 12);
+    @include suffix(2 of 12);
   }
 
   .page__inner-wrap {
@@ -444,7 +440,7 @@
   p.page__date {
     font-size: 1em;
     // font-size: 0.75em;
-  
+
     // reduce margin
     margin-top: 0;
     margin-bottom: 0.2em;
@@ -455,7 +451,7 @@
     margin-bottom: 0;
   }
 
-  h2{
+  h2 {
     margin-bottom: 0;
     padding-bottom: 0.2em;
   }
@@ -468,7 +464,8 @@
 .responsive-pdf-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
   max-width: 100%;
