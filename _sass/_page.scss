@@ -19,7 +19,7 @@
 
 .page {
   padding-left: 1em !important;
-  padding-right: 4em !important;
+  padding-right: 1em !important;
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
